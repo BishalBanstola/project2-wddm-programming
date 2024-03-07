@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - AI Products Website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <div class="brand">
+          <a href="/">Pet Translator</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <h1>Contact Us</h1>
+      <p>
+        We'd love to hear from you! Please use the form below to send us your
+        feedback or inquiries.
+      </p>
+    </header>
+
+    <main>
+      <form
+        id="contactForm"
+        action="/submitFeedback"
+        method="POST"
+        enctype="application/x-www-form-urlencoded"
+      >
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

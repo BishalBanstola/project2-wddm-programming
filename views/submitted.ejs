@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Submitted - AI Products Website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <div class="brand">
+          <a href="/">Pet Translator</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <h1>Feedback Submitted</h1>
+      <p>Thank you for your feedback! We appreciate your input.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Email:</h2>
+        <% if (email) { %>
+        <p><%= email %></p>
+        <% } else { %>
+        <p>Email not provided</p>
+        <% } %>
+      </section>
+
+      <section>
+        <h2>Feedback:</h2>
+        <p><%= feedback %></p>
+        <!-- Display the feedback data -->
+      </section>
+    </main>
+  </body>
+</html>
